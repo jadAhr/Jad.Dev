@@ -1,0 +1,249 @@
+/* Root */
+*{
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+
+
+}
+.title{
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 30px;
+
+}
+#nav-link{
+    display: flex;
+    padding: 30px;
+    
+}
+.links{
+    padding: 0px 10px 0px 10px;
+    font-size: 1.3rem;
+}
+
+/* Content */
+
+
+#Me{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+p{
+   font-size: 3rem;
+   width: 540px;
+    
+}
+h1,h2{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+button{
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: #8a8888;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    animation: moveUp 1s ease-in-out forwards;
+    transition: all ease 0.5s;
+}
+button:hover{
+    background-color: #2b2b2b;
+
+}
+#Hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: moveUp 0.5s ease-in-out forwards;
+}
+#Bottons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#About{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 730px;
+    
+    
+}
+h3{
+    font-weight: 700;
+    font-size: 3rem;
+    border-bottom: solid;
+    border-width: 1px;
+    width: 900px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 10px;
+}
+#goal-text{
+    font-size: 1.5rem;
+    width: 900px;
+    padding: 10px;
+    color: #b4b4b4;
+}
+#related-text{
+    font-size: 1.5rem;
+    width: 900px;
+    color: #b4b4b4;
+    padding: 10px;
+}
+
+svg{
+    width: 50px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    padding: 30px;
+}
+#fotter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+#foter_id{
+    font-size: 1rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media only screen and (max-width:480px){
+h1,h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+button{
+    font-size: 0.5rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: #8a8888;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    animation: moveUp 1s ease-in-out forwards;
+    transition: all ease 0.5s;
+}
+#Me{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+#Hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    animation: moveUp 0.5s ease-in-out forwards;
+}
+#About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#logo{
+    flex-wrap: wrap;
+    flex: 3 auto;
+    padding: 40px 0px;
+    row-gap: 30px;
+    width: 100%;
+}
+#goal-text,#related-text{
+    font-size: 1rem;
+    width:80%;
+    
+    color: #b4b4b4;
+}
+
+#content{
+    width: 100%;
+}
+h3{
+    width: 90%;
+    font-size: 2rem;
+}
+
+   
+
+}
+
+/* animation */
+
+@keyframes moveUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
